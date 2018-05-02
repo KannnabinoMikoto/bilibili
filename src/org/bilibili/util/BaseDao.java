@@ -25,7 +25,13 @@ public class BaseDao {
 		}
 		return conn;
 	}
-	
+	/**
+	 * 
+	 * 关闭连接
+	 * @param conn
+	 * @param stmt
+	 * @param rs
+	 */
 	public void closeAll(Connection conn,Statement stmt,ResultSet rs){
 		if(rs != null){
 			try {
